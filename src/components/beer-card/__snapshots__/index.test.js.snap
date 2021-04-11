@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BeerCard has heart-icon svg 1`] = `
+<div>
+  <div
+    class="sc-bZQynM hAXOBD"
+  >
+    <div
+      class="sc-htoDjs lnaoXq"
+    >
+      <div
+        class="sc-bxivhb kZOLLW"
+      >
+        <h3
+          class="sc-bwzfXH hCaboq"
+        >
+          Berliner Weisse With Yuzu - B-Sides
+        </h3>
+        <p
+          class="sc-htpNat hlvQJl"
+        >
+          Clean everything twice. All you want is the clean sourness of lactobacillus.
+        </p>
+      </div>
+    </div>
+    <div
+      class="sc-gzVnrw cGNayq"
+    >
+      <button
+        class="sc-ifAKCX ddkBQF"
+      >
+        <svg
+          class="sc-EHOje cJrdBJ"
+        >
+          <path
+            d="M16,28.261c0,0-14-7.926-14-17.046c0-9.356,13.159-10.399,14-0.454c1.011-9.938,14-8.903,14,0.454
+ C30,20.335,16,28.261,16,28.261z"
+            id="heart-icon"
+          />
+        </svg>
+      </button>
+      <img
+        class="sc-bdVaJa keeMeq"
+        src="https://images.punkapi.com/v2/keg.png"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BeerCard renders without crashing 1`] = `
+<div>
+  <div
+    class="sc-bZQynM hAXOBD"
+  >
+    <div
+      class="sc-htoDjs lnaoXq"
+    >
+      <div
+        class="sc-bxivhb kZOLLW"
+      >
+        <h3
+          class="sc-bwzfXH hCaboq"
+        >
+          Berliner Weisse With Yuzu - B-Sides
+        </h3>
+        <p
+          class="sc-htpNat hlvQJl"
+        >
+          Clean everything twice. All you want is the clean sourness of lactobacillus.
+        </p>
+      </div>
+    </div>
+    <div
+      class="sc-gzVnrw cGNayq"
+    >
+      <button
+        class="sc-ifAKCX ddkBQF"
+      >
+        <svg
+          class="sc-EHOje cJrdBJ"
+        >
+          <path
+            d="M16,28.261c0,0-14-7.926-14-17.046c0-9.356,13.159-10.399,14-0.454c1.011-9.938,14-8.903,14,0.454
+ C30,20.335,16,28.261,16,28.261z"
+            id="heart-icon"
+          />
+        </svg>
+      </button>
+      <img
+        class="sc-bdVaJa keeMeq"
+        src="https://images.punkapi.com/v2/keg.png"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -13,7 +13,7 @@ const BeerCard = styled.div`
 const ImagContainer = styled.div`
   padding: 40px 20px;
   background-color: #2897b1;
-  position: flex-end;
+  position: relative;
   margin-top: auto;
 
   img {

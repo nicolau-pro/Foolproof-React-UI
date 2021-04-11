@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LikeButton renders correctly when liked=false 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa gvsZWK"
+  >
+    <svg
+      class="sc-bwzfXH jrkcCm"
+    >
+      <path
+        d="M16,28.261c0,0-14-7.926-14-17.046c0-9.356,13.159-10.399,14-0.454c1.011-9.938,14-8.903,14,0.454
+ C30,20.335,16,28.261,16,28.261z"
+        id="heart-icon"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`LikeButton renders correctly when liked=true 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa gvsZWK"
+  >
+    <svg
+      class="sc-bwzfXH jvdhts"
+    >
+      <path
+        d="M16,28.261c0,0-14-7.926-14-17.046c0-9.356,13.159-10.399,14-0.454c1.011-9.938,14-8.903,14,0.454
+ C30,20.335,16,28.261,16,28.261z"
+        id="heart-icon"
+      />
+    </svg>
+  </button>
+</div>
+`;
