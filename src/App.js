@@ -9,18 +9,13 @@ import Header from './components/shared/header';
 import Hero from './components/hero';
 import Section from './components/layout/section';
 import Wrapper from './components/layout/wrapper';
+import Grid from './components/layout/grid';
 
 const MainWrapper = styled.main`
   display: block;
   position: relative;
   width: 100%;
   border: 1px dotted red;
-
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 `;
 
 function App() {
@@ -52,11 +47,11 @@ function App() {
 
           {!loading && (
             <Wrapper>
-              <div className='grid'>
+              <Grid>
                 {data.beers.map((item, index) => (
                   <BeerCard key={index.toString()} image={item.image_url} title={item.name} description={item.brewers_tips} />
                 ))}
-              </div>
+              </Grid>
             </Wrapper>
           )}
         </Section>

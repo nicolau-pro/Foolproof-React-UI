@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { device } from '../../helpers';
 import Image from '../../elements/image';
 import Lockup from '../lockup';
 import Like from './like-button';
@@ -9,16 +8,6 @@ const BeerCard = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  flex-basis: 100%;
-
-  &:nth-of-type(3n - 2) {
-    margin-left: 0;
-  }
-
-  @media ${device.laptop} {
-    width: 30%;
-    flex-basis: calc(33.333333% - 20px);
-  }
 `;
 
 const ImagContainer = styled.div`
