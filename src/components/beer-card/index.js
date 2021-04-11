@@ -6,22 +6,27 @@ import Lockup from '../lockup';
 import Like from './like-button';
 
 const BeerCard = styled.div`
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 30px;
-  margin-left: 20px;
-  width: 100%;
+  flex-basis: 100%;
+
+  &:nth-of-type(3n - 2) {
+    margin-left: 0;
+  }
 
   @media ${device.laptop} {
     width: 30%;
+    flex-basis: calc(33.333333% - 20px);
   }
 `;
 
 const ImagContainer = styled.div`
   padding: 40px 20px;
   background-color: #2897b1;
-  position: relative;
+  position: flex-end;
   margin-top: auto;
-  
+
   img {
     height: 100px;
     width: auto;
@@ -34,25 +39,25 @@ const Content = styled.div`
   padding: 20px;
 `;
 
-function Beercard(props) {
+const Beercard = (props) => {
   const [active, setActive] = useState(false);
 
   const changeLike = () => {
-    setActive(!active)
-  }
+    setActive(!active);
+  };
 
   return (
     <BeerCard>
-      <ImagContainer>
-        <Like liked={active} />
-        <Image url={props.image}/>
-      </ImagContainer>
-
       <Content>
-        <Lockup text={props.description} tag="h3" title={props.title}/>
+        <Lockup text={props.description} tag='h3' title={props.title} />
       </Content>
-    </BeerCard>
-  )
-}
 
-export default Beercard
+      <ImagContainer>
+        <Like liked={active} action={changeLike} />
+        <Image url={props.image} />
+      </ImagContainer>
+    </BeerCard>
+  );
+};
+
+export default Beercard;
