@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import { device } from '../../helpers';
 
 export const Grid = styled.div`
@@ -12,19 +12,30 @@ export const Grid = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media ${device.laptop} {
-  }
-
   > div {
     flex-basis: 100%;
 
     @media ${device.laptop} {
-      width: 30%;
-      flex-basis: calc(33.333333% - 13.333333px);
+      flex-basis: calc(
+        ${(props) => 100 / props.theme.itemsPerRow}% - ${(props) => (props.theme.gap * (props.theme.itemsPerRow - 1)) / props.theme.itemsPerRow}px
+      );
     }
   }
 `;
 
-const grid = (props) => <Grid>{props.children}</Grid>;
+Grid.defaultProps = {
+  theme: {
+    itemsPerRow: 3,
+    gap: 20,
+  },
+};
+
+const grid = (props) => {
+  return (
+    <ThemeProvider theme={props.theme}>
+      <Grid>{props.children}</Grid>
+    </ThemeProvider>
+  );
+};
 
 export default grid;

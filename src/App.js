@@ -47,7 +47,7 @@ function App() {
 
           {!loading && (
             <Wrapper>
-              <Grid>
+              <Grid theme={{ itemsPerRow: 3, gap: 20 }}>
                 {data.beers.map((item, index) => (
                   <BeerCard key={index.toString()} image={item.image_url} title={item.name} description={item.brewers_tips} />
                 ))}
